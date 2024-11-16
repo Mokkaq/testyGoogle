@@ -1,0 +1,201 @@
+\doxysection{Merge\+Sort Class Reference}
+\hypertarget{class_merge_sort}{}\label{class_merge_sort}\index{MergeSort@{MergeSort}}
+
+
+Klasa implementuj¹ca algorytm sortowania przez scalanie.  
+
+
+
+
+{\ttfamily \#include $<$merge\+Sort.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_merge_sort_a55ae6cf0736f402fc4f0db2d9326a641}{Merge\+Sort}} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor domyœlny klasy \doxylink{class_merge_sort}{Merge\+Sort}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_merge_sort_ac02bc86932620fafcb277bd81239741d}{Merge\+Sort}} (int tab\mbox{[}$\,$\mbox{]}, int size)
+\begin{DoxyCompactList}\small\item\em Konstruktor inicjalizuj¹cy z tablic¹ wejœciow¹. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_merge_sort_a7140fd17b17558d9810c8e791c353909}{\texorpdfstring{$\sim$}{\string~}\+Merge\+Sort}} ()
+\begin{DoxyCompactList}\small\item\em Destruktor klasy \doxylink{class_merge_sort}{Merge\+Sort}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_merge_sort_a8ffc46b902c6cdfec363a4cd1e2c36e8}{set\+Tab}} (int tab\mbox{[}$\,$\mbox{]}, int tab\+Size)
+\begin{DoxyCompactList}\small\item\em Ustawia zawartoœæ wewnêtrznej tablicy na podstawie podanej tablicy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_merge_sort_a230ef88c5677f3e0fe7ad4aba5acae96}{sort}} ()
+\begin{DoxyCompactList}\small\item\em Rozpoczyna proces sortowania tablicy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_merge_sort_a03c995b914dbd82940c96a7af27fa1ed}{print\+Tab}} ()
+\begin{DoxyCompactList}\small\item\em Wypisuje zawartoœæ wewnêtrznej tablicy na ekran. \end{DoxyCompactList}\item 
+int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_merge_sort_a071844068bcc68f13173630e60b1479b}{get\+Tab}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca wskaŸnik do wewnêtrznej tablicy dynamicznej. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_merge_sort_a269bc8660932f29d66757c0e7fb8957f}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca rozmiar wewnêtrznej tablicy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa implementuj¹ca algorytm sortowania przez scalanie. 
+
+Klasa zarz¹dza dynamicznie alokowan¹ tablic¹, umo¿liwia jej sortowanie metod¹ sortowania przez scalanie, wypisanie na ekran oraz modyfikacjê. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_merge_sort_a55ae6cf0736f402fc4f0db2d9326a641}\index{MergeSort@{MergeSort}!MergeSort@{MergeSort}}
+\index{MergeSort@{MergeSort}!MergeSort@{MergeSort}}
+\doxysubsubsection{\texorpdfstring{MergeSort()}{MergeSort()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_merge_sort_a55ae6cf0736f402fc4f0db2d9326a641} 
+Merge\+Sort\+::\+Merge\+Sort (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor domyœlny klasy \doxylink{class_merge_sort}{Merge\+Sort}. 
+
+Konstruktor domyÅ›lny klasy \doxylink{class_merge_sort}{Merge\+Sort}.
+
+Tworzy pust¹ tablicê o rozmiarze 0 i alokuje pamiêæ dla wskaŸnika {\ttfamily arr}.
+
+Tworzy pustÄ… tablicÄ™ dynamicznÄ… o rozmiarze 0. Alokuje pamiÄ™Ä‡ dla tablicy i inicjalizuje wskaÅºnik {\ttfamily arr} oraz zmiennÄ… {\ttfamily size}. \Hypertarget{class_merge_sort_ac02bc86932620fafcb277bd81239741d}\index{MergeSort@{MergeSort}!MergeSort@{MergeSort}}
+\index{MergeSort@{MergeSort}!MergeSort@{MergeSort}}
+\doxysubsubsection{\texorpdfstring{MergeSort()}{MergeSort()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_merge_sort_ac02bc86932620fafcb277bd81239741d} 
+Merge\+Sort\+::\+Merge\+Sort (\begin{DoxyParamCaption}\item[{int}]{tab}{\mbox{[}$\,$\mbox{]}, }\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor inicjalizuj¹cy z tablic¹ wejœciow¹. 
+
+Konstruktor inicjalizujÄ…cy klasÄ™ \doxylink{class_merge_sort}{Merge\+Sort} z tablicÄ… wejÅ›ciowÄ….
+
+Tworzy obiekt klasy \doxylink{class_merge_sort}{Merge\+Sort}, kopiuje dane z podanej tablicy do wewnêtrznej tablicy dynamicznej i sortuje j¹.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & WskaŸnik do tablicy wejœciowej. \\
+\hline
+{\em size} & Rozmiar tablicy wejœciowej.\\
+\hline
+\end{DoxyParams}
+Kopiuje dane z podanej tablicy wejÅ›ciowej do wewnÄ™trznej tablicy obiektu. NastÄ™pnie automatycznie uruchamia proces sortowania tablicy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & WskaÅºnik do tablicy wejÅ›ciowej. \\
+\hline
+{\em size} & Rozmiar tablicy wejÅ›ciowej. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_merge_sort_a7140fd17b17558d9810c8e791c353909}\index{MergeSort@{MergeSort}!````~MergeSort@{\texorpdfstring{$\sim$}{\string~}MergeSort}}
+\index{````~MergeSort@{\texorpdfstring{$\sim$}{\string~}MergeSort}!MergeSort@{MergeSort}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MergeSort()}{\string~MergeSort()}}
+{\footnotesize\ttfamily \label{class_merge_sort_a7140fd17b17558d9810c8e791c353909} 
+Merge\+Sort\+::\texorpdfstring{$\sim$}{\string~}\+Merge\+Sort (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destruktor klasy \doxylink{class_merge_sort}{Merge\+Sort}. 
+
+Zwalnia pamiêæ zaalokowan¹ dla dynamicznie alokowanej tablicy.
+
+Usuwa dynamicznie zaalokowanÄ… pamiÄ™Ä‡ dla tablicy {\ttfamily arr}, aby zapobiec wyciekowi pamiÄ™ci. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_merge_sort_a269bc8660932f29d66757c0e7fb8957f}\index{MergeSort@{MergeSort}!getSize@{getSize}}
+\index{getSize@{getSize}!MergeSort@{MergeSort}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{class_merge_sort_a269bc8660932f29d66757c0e7fb8957f} 
+int Merge\+Sort\+::get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca rozmiar wewnêtrznej tablicy. 
+
+Zwraca rozmiar wewnÄ™trznej tablicy obiektu.
+
+\begin{DoxyReturn}{Returns}
+Liczba elementów w dynamicznie zaalokowanej tablicy {\ttfamily arr}.
+
+Liczba elementÃ³w w tablicy {\ttfamily arr}. 
+\end{DoxyReturn}
+\Hypertarget{class_merge_sort_a071844068bcc68f13173630e60b1479b}\index{MergeSort@{MergeSort}!getTab@{getTab}}
+\index{getTab@{getTab}!MergeSort@{MergeSort}}
+\doxysubsubsection{\texorpdfstring{getTab()}{getTab()}}
+{\footnotesize\ttfamily \label{class_merge_sort_a071844068bcc68f13173630e60b1479b} 
+int \texorpdfstring{$\ast$}{*} Merge\+Sort\+::get\+Tab (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Zwraca wskaŸnik do wewnêtrznej tablicy dynamicznej. 
+
+Zwraca wskaÅºnik do wewnÄ™trznej tablicy obiektu.
+
+\begin{DoxyReturn}{Returns}
+WskaŸnik do dynamicznie zaalokowanej tablicy {\ttfamily arr}.
+
+WskaÅºnik do tablicy {\ttfamily arr}. 
+\end{DoxyReturn}
+\Hypertarget{class_merge_sort_a03c995b914dbd82940c96a7af27fa1ed}\index{MergeSort@{MergeSort}!printTab@{printTab}}
+\index{printTab@{printTab}!MergeSort@{MergeSort}}
+\doxysubsubsection{\texorpdfstring{printTab()}{printTab()}}
+{\footnotesize\ttfamily \label{class_merge_sort_a03c995b914dbd82940c96a7af27fa1ed} 
+void Merge\+Sort\+::print\+Tab (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Wypisuje zawartoœæ wewnêtrznej tablicy na ekran. 
+
+Wypisuje zawartoÅ›Ä‡ wewnÄ™trznej tablicy obiektu na standardowe wyjÅ›cie.
+
+Elementy s¹ wypisywane w jednej linii, oddzielone spacjami.
+
+Wszystkie elementy tablicy sÄ… wypisywane w jednej linii, oddzielone spacjami. \Hypertarget{class_merge_sort_a8ffc46b902c6cdfec363a4cd1e2c36e8}\index{MergeSort@{MergeSort}!setTab@{setTab}}
+\index{setTab@{setTab}!MergeSort@{MergeSort}}
+\doxysubsubsection{\texorpdfstring{setTab()}{setTab()}}
+{\footnotesize\ttfamily \label{class_merge_sort_a8ffc46b902c6cdfec363a4cd1e2c36e8} 
+void Merge\+Sort\+::set\+Tab (\begin{DoxyParamCaption}\item[{int}]{tab}{\mbox{[}$\,$\mbox{]}, }\item[{int}]{tab\+Size}{}\end{DoxyParamCaption})}
+
+
+
+Ustawia zawartoœæ wewnêtrznej tablicy na podstawie podanej tablicy. 
+
+Kopiuje zawartoÅ›Ä‡ z podanej tablicy wejÅ›ciowej do wewnÄ™trznej tablicy obiektu.
+
+Kopiuje dane z tablicy wejœciowej {\ttfamily tab} do wewnêtrznej tablicy {\ttfamily arr}. Operacja jest ograniczona do rozmiaru wewnêtrznej tablicy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & WskaŸnik do tablicy wejœciowej. \\
+\hline
+{\em tab\+Size} & Rozmiar tablicy wejœciowej. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Jeœli rozmiar podanej tablicy przekracza rozmiar wewnêtrznej tablicy, operacja nie jest wykonywana.
+\end{DoxyNote}
+Funkcja kopiuje dane z tablicy {\ttfamily tab} do tablicy {\ttfamily arr} obiektu. Kopiowanie jest ograniczone do rozmiaru wewnÄ™trznej tablicy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & WskaÅºnik do tablicy wejÅ›ciowej. \\
+\hline
+{\em tab\+Size} & Rozmiar tablicy wejÅ›ciowej.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+JeÅ›li {\ttfamily tab\+Size} przekracza rozmiar wewnÄ™trznej tablicy, funkcja nie wykonuje operacji. 
+\end{DoxyNote}
+\Hypertarget{class_merge_sort_a230ef88c5677f3e0fe7ad4aba5acae96}\index{MergeSort@{MergeSort}!sort@{sort}}
+\index{sort@{sort}!MergeSort@{MergeSort}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily \label{class_merge_sort_a230ef88c5677f3e0fe7ad4aba5acae96} 
+void Merge\+Sort\+::sort (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Rozpoczyna proces sortowania tablicy. 
+
+Rozpoczyna sortowanie tablicy wewnÄ™trznej.
+
+U¿ywa metody sortowania przez scalanie do posortowania wewnêtrznej tablicy {\ttfamily arr}.
+
+Implementacja korzysta z metody sortowania przez scalanie. JeÅ›li rozmiar tablicy wynosi 0 lub 1, sortowanie nie jest wykonywane. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+merge\+Sort/\mbox{\hyperlink{merge_sort_8h}{merge\+Sort.\+h}}\item 
+merge\+Sort/\mbox{\hyperlink{merge_sort_8cpp}{merge\+Sort.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\doxysection{merge\+Sort.\+cpp}
+\hypertarget{merge_sort_8cpp_source}{}\label{merge_sort_8cpp_source}\index{mergeSort/mergeSort.cpp@{mergeSort/mergeSort.cpp}}
+\mbox{\hyperlink{merge_sort_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{merge_sort_8h}{MergeSort.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00018\ \mbox{\hyperlink{class_merge_sort_a55ae6cf0736f402fc4f0db2d9326a641}{MergeSort::MergeSort}}()\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ this-\/>size\ =\ 0;}
+\DoxyCodeLine{00020\ \ \ \ \ this-\/>arr\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{int}[this-\/>size];}
+\DoxyCodeLine{00021\ \}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00032\ \mbox{\hyperlink{class_merge_sort_a55ae6cf0736f402fc4f0db2d9326a641}{MergeSort::MergeSort}}(\textcolor{keywordtype}{int}\ tab[],\ \textcolor{keywordtype}{int}\ size)\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ this-\/>size\ =\ size;}
+\DoxyCodeLine{00034\ \ \ \ \ this-\/>arr\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{int}[size];}
+\DoxyCodeLine{00035\ \ \ \ \ this-\/>\mbox{\hyperlink{class_merge_sort_a8ffc46b902c6cdfec363a4cd1e2c36e8}{setTab}}(tab,\ this-\/>size);}
+\DoxyCodeLine{00036\ \ \ \ \ this-\/>\mbox{\hyperlink{class_merge_sort_a230ef88c5677f3e0fe7ad4aba5acae96}{sort}}();}
+\DoxyCodeLine{00037\ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \mbox{\hyperlink{class_merge_sort_a7140fd17b17558d9810c8e791c353909}{MergeSort::\string~MergeSort}}()\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{delete}[]\ arr;}
+\DoxyCodeLine{00046\ \}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00059\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_merge_sort_a8ffc46b902c6cdfec363a4cd1e2c36e8}{MergeSort::setTab}}(\textcolor{keywordtype}{int}\ tab[],\ \textcolor{keywordtype}{int}\ tabSize)\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordflow}{if}\ (tabSize\ >\ size)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ tabSize;\ i++)\ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ arr[i]\ =\ tab[i];}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00072\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_merge_sort_a230ef88c5677f3e0fe7ad4aba5acae96}{MergeSort::sort}}()\ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordflow}{if}\ (size\ <=\ 1)\ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00074\ \ \ \ \ mergeSort(arr,\ 0,\ size\ -\/\ 1);}
+\DoxyCodeLine{00075\ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00082\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_merge_sort_a03c995b914dbd82940c96a7af27fa1ed}{MergeSort::printTab}}()\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ size;\ i++)\ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ std::cout\ <<\ arr[i]\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{00085\ \ \ \ \ \}}
+\DoxyCodeLine{00086\ \ \ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{00087\ \}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00094\ \textcolor{keywordtype}{int}*\ \mbox{\hyperlink{class_merge_sort_a071844068bcc68f13173630e60b1479b}{MergeSort::getTab}}()\ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>arr;}
+\DoxyCodeLine{00096\ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00103\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_merge_sort_a269bc8660932f29d66757c0e7fb8957f}{MergeSort::getSize}}()\ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordflow}{return}\ this-\/>size;}
+\DoxyCodeLine{00105\ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00117\ \textcolor{keywordtype}{void}\ MergeSort::mergeSort(\textcolor{keywordtype}{int}*\ arr,\ \textcolor{keywordtype}{int}\ left,\ \textcolor{keywordtype}{int}\ right)\ \{}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordflow}{if}\ (left\ <\ right)\ \{}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ mid\ =\ left\ +\ (right\ -\/\ left)\ /\ 2;}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ mergeSort(arr,\ left,\ mid);\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ mergeSort(arr,\ mid\ +\ 1,\ right);\ \ \ }
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ merge(arr,\ left,\ mid,\ right);\ \ \ \ \ }
+\DoxyCodeLine{00125\ \ \ \ \ \}}
+\DoxyCodeLine{00126\ \}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00140\ \textcolor{keywordtype}{void}\ MergeSort::merge(\textcolor{keywordtype}{int}*\ arr,\ \textcolor{keywordtype}{int}\ left,\ \textcolor{keywordtype}{int}\ mid,\ \textcolor{keywordtype}{int}\ right)\ \{}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordtype}{int}\ n1\ =\ mid\ -\/\ left\ +\ 1;\ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{int}\ n2\ =\ right\ -\/\ mid;\ \ \ \ }
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{int}*\ leftArr\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{int}[n1];\ }
+\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{int}*\ rightArr\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{int}[n2];\ }
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{comment}{//\ Kopiowanie\ danych\ do\ tablic\ pomocniczych.}}
+\DoxyCodeLine{00148\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ n1;\ i++)}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ leftArr[i]\ =\ arr[left\ +\ i];}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <\ n2;\ j++)}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ rightArr[j]\ =\ arr[mid\ +\ 1\ +\ j];}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ 0,\ j\ =\ 0,\ k\ =\ left;\ }
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{comment}{//\ Scalanie\ danych\ z\ tablic\ pomocniczych\ do\ tablicy\ głównej.}}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordflow}{while}\ (i\ <\ n1\ \&\&\ j\ <\ n2)\ \{}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (leftArr[i]\ <=\ rightArr[j])\ \{}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ arr[k]\ =\ leftArr[i];}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ arr[k]\ =\ rightArr[j];}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ j++;}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ k++;}
+\DoxyCodeLine{00166\ \ \ \ \ \}}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{comment}{//\ Kopiowanie\ pozostałych\ elementów\ z\ lewej\ części,\ jeśli\ istnieją.}}
+\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keywordflow}{while}\ (i\ <\ n1)\ \{}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ arr[k]\ =\ leftArr[i];}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ k++;}
+\DoxyCodeLine{00173\ \ \ \ \ \}}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{comment}{//\ Kopiowanie\ pozostałych\ elementów\ z\ prawej\ części,\ jeśli\ istnieją.}}
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keywordflow}{while}\ (j\ <\ n2)\ \{}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ arr[k]\ =\ rightArr[j];}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ j++;}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ k++;}
+\DoxyCodeLine{00180\ \ \ \ \ \}}
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keyword}{delete}[]\ leftArr;\ }
+\DoxyCodeLine{00183\ \ \ \ \ \textcolor{keyword}{delete}[]\ rightArr;\ }
+\DoxyCodeLine{00184\ \}}
+
+\end{DoxyCode}

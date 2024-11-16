@@ -1,3 +1,13 @@
+/**
+ * @file test.cpp
+ * @brief Testy jednostkowe dla klasy MergeSort.
+ *
+ * Plik zawiera zestaw testów jednostkowych weryfikuj¹cych poprawnoœæ dzia³ania
+ * algorytmu sortowania przez scalanie zaimplementowanego w klasie MergeSort.
+ * Testy obejmuj¹ ró¿ne przypadki u¿ycia, takie jak sortowanie liczb dodatnich,
+ * ujemnych, duplikatów, tablic specjalnych (np. jednoelementowych) oraz du¿ych zbiorów danych.
+ */
+
 #include "pch.h"
 
 #include "../MergeSort/MergeSort.h"
@@ -5,8 +15,9 @@
 
 #include <algorithm>
 #include <cstdlib>
-
-// Zachowuje tablicê niezmienion¹, gdy ona jest ju¿ posortowana rosn¹co    
+/**
+* @test  Zachowuje tablicê niezmienion¹, gdy ona jest ju¿ posortowana rosn¹co    
+*/
 TEST(Sort, TabNiezmienionaRosnaco) {
 	int tab[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 	int size = sizeof(tab) / sizeof(tab[0]);
@@ -19,8 +30,9 @@ TEST(Sort, TabNiezmienionaRosnaco) {
 	}
 }
 
-
-// Potrafi posortowaæ tablicê, która jest posortowana w odwrotnej kolejnoœci
+/**
+* @test  Potrafi posortowaæ tablicê, która jest posortowana w odwrotnej kolejnoœci
+*/
 TEST(Sort, TabWOdwrotnejKolejnosci) {
 	int tab[] = {9, 8, 7, 6, 5, 4, 11, 2, 1, 0};
 	int size = sizeof(tab) / sizeof(tab[0]);
@@ -46,8 +58,9 @@ TEST(Sort, TabWOdwrotnejKolejnosci) {
 	//std::cout << std::endl;
 }
 
-
-// Poprawnie sortuje losow¹ tablicê liczb
+/**
+*  @test Poprawnie sortuje losow¹ tablicê liczb
+*/
 TEST(Sort,TabLosowychLiczb) {
 	int size = 10;
 	int tab[10];
@@ -68,8 +81,9 @@ TEST(Sort,TabLosowychLiczb) {
 	}
 }
 
-
-// Poprawnie sortuje tablice tylko z liczbami ujemnymi
+/**
+* @test  Poprawnie sortuje tablice tylko z liczbami ujemnymi
+*/
 TEST(Sort, TabLiczbyUjemne) {
 	int tab[] = { -38, -27, -43, -3, -9, -82, -10 };
 	int size = sizeof(tab) / sizeof(tab[0]);
@@ -85,8 +99,9 @@ TEST(Sort, TabLiczbyUjemne) {
 	}
 }
 
-
-// Poprawnie sortuje tablice z liczbami ujemnymi i liczbami dodatnimi
+/**
+* @test  Poprawnie sortuje tablice z liczbami ujemnymi i liczbami dodatnimi
+*/
 TEST(Sort, TabLiczbyUjemneIDodatnie) {
 	int tab[] = { -38, 27, -43, 3, -9, 82, -10 };
 	int size = sizeof(tab) / sizeof(tab[0]);
@@ -102,8 +117,9 @@ TEST(Sort, TabLiczbyUjemneIDodatnie) {
 	}
 }
 
-
-// Obs³uguje pust¹ tablicê bez rzucania wyj¹tkiem
+/**
+* @test  Obs³uguje pust¹ tablicê bez rzucania wyj¹tkiem
+*/
 TEST(Inicjalizuj, NieRzucaWyjatkiem) {
 	int tab[] = { 0 };
 	int size = sizeof(tab) / sizeof(tab[0]);
@@ -111,8 +127,9 @@ TEST(Inicjalizuj, NieRzucaWyjatkiem) {
 	ASSERT_NO_THROW(MergeSort arrayToSort(tab, size));
 }
 
-
-// Nie zmienia tablicy, która zawiera tylko jeden element
+/**
+*  @test Nie zmienia tablicy, która zawiera tylko jeden element
+*/
 TEST(Sort, TabJednoelementowa) {
 	int tab[] = { 42 };
 	int size = sizeof(tab) / sizeof(tab[0]);
@@ -125,8 +142,9 @@ TEST(Sort, TabJednoelementowa) {
 	}
 }
 
-
-// Poprawnie sortuje tablicê z duplikatami liczb
+/**
+* @test  Poprawnie sortuje tablicê z duplikatami liczb
+*/
 TEST(Sort, TabZDuplikatami) {
 	int tab[] = { 4, 1, 4, 2, 1, 3, 4 };
 	int size = sizeof(tab) / sizeof(tab[0]);
@@ -142,8 +160,9 @@ TEST(Sort, TabZDuplikatami) {
 	}
 }
 
-
-// Poprawnie sortuje tablice ujemn¹ z duplikatami
+/**
+* @test  Poprawnie sortuje tablice ujemn¹ z duplikatami
+*/
 TEST(Sort, TabZUjemnymiDuplikatami) {
 	int tab[] = { -5, -10, -5, -30, -5, -30, -4 };
 	int size = sizeof(tab) / sizeof(tab[0]);
@@ -159,8 +178,9 @@ TEST(Sort, TabZUjemnymiDuplikatami) {
 	}
 }
 
-
-// Poprawnie sortuje tablice z liczbami ujemnymi, dodatnimi oraz duplikatami
+/**
+* @test  Poprawnie sortuje tablice z liczbami ujemnymi, dodatnimi oraz duplikatami
+*/
 TEST(Sort, TabUjemneDodatnieDuplikaty) {
 	int tab[] = { 5, -3, 7, -3, 2, 0, 5, 7, -1, 5 };
 	int size = sizeof(tab) / sizeof(tab[0]);
@@ -177,8 +197,9 @@ TEST(Sort, TabUjemneDodatnieDuplikaty) {
 	}
 }
 
-
-// Poprawnie sortuje tablicê zawieraj¹c¹ tylko dwa elementy w kolejnoœci rosn¹cej
+/**
+* @test  Poprawnie sortuje tablicê zawieraj¹c¹ tylko dwa elementy w kolejnoœci rosn¹cej
+*/
 TEST(Sort, TabDwuelementowaRosnaca) {
 	int tab[] = { 2, 1 };
 	int size = sizeof(tab) / sizeof(tab[0]);
@@ -194,8 +215,9 @@ TEST(Sort, TabDwuelementowaRosnaca) {
 	}
 }
 
-
-// Poprawnie sortuje du¿¹ tablicê zawieraj¹c¹ ponad 100 elementów
+/**
+* @test  Poprawnie sortuje du¿¹ tablicê zawieraj¹c¹ ponad 100 elementów
+*/
 TEST(Sort, TabStoElementow) {
 	const int size = 150;
 	int tab[size];
@@ -217,8 +239,9 @@ TEST(Sort, TabStoElementow) {
 	}
 }
 
-
-// Poprawnie sortuje du¿¹ tablicê zawieraj¹c¹ ponad 100 elementów z liczbami ujemnymi, dodatnimi oraz duplikatami
+/**
+* @test Poprawnie sortuje du¿¹ tablicê zawieraj¹c¹ ponad 100 elementów z liczbami ujemnymi, dodatnimi oraz duplikatami
+*/
 TEST(Sort, TabOstateczna) {
 	const int size = 200;
 	int tab[size];

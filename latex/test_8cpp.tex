@@ -1,0 +1,154 @@
+\doxysection{testy\+Google/test.cpp File Reference}
+\hypertarget{test_8cpp}{}\label{test_8cpp}\index{testyGoogle/test.cpp@{testyGoogle/test.cpp}}
+
+
+Testy jednostkowe dla klasy \doxylink{class_merge_sort}{Merge\+Sort}.  
+
+
+{\ttfamily \#include "{}pch.\+h"{}}\newline
+{\ttfamily \#include "{}../\+Merge\+Sort/\+Merge\+Sort.\+h"{}}\newline
+{\ttfamily \#include "{}../\+Merge\+Sort/\+Merge\+Sort.\+cpp"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{test_8cpp_a02c8a31475a8c09a7b7cb25e4bcf8940}{TEST}} (Sort, Tab\+Niezmieniona\+Rosnaco)
+\item 
+\mbox{\hyperlink{test_8cpp_aef17d5ea439b89eb57e0ecc8c085c0dc}{TEST}} (Sort, Tab\+WOdwrotnej\+Kolejnosci)
+\item 
+\mbox{\hyperlink{test_8cpp_a1d2084ba269c9929b491e94c6c7c5341}{TEST}} (Sort, Tab\+Losowych\+Liczb)
+\item 
+\mbox{\hyperlink{test_8cpp_a19b1a603c8e524283c2e361848eb7836}{TEST}} (Sort, Tab\+Liczby\+Ujemne)
+\item 
+\mbox{\hyperlink{test_8cpp_ac0628bf71ce706468c154a0d7b2e5e0c}{TEST}} (Sort, Tab\+Liczby\+Ujemne\+IDodatnie)
+\item 
+\mbox{\hyperlink{test_8cpp_ac2b64e909897b1e60eba70526b6a3acb}{TEST}} (Inicjalizuj, Nie\+Rzuca\+Wyjatkiem)
+\item 
+\mbox{\hyperlink{test_8cpp_a39e38905ebee6b55d64d589068839f1f}{TEST}} (Sort, Tab\+Jednoelementowa)
+\item 
+\mbox{\hyperlink{test_8cpp_a881ab84252650f02ccdb7131ad6c3dd5}{TEST}} (Sort, Tab\+ZDuplikatami)
+\item 
+\mbox{\hyperlink{test_8cpp_ae9353fe6bb95fed608c789e4f202c2f0}{TEST}} (Sort, Tab\+ZUjemnymi\+Duplikatami)
+\item 
+\mbox{\hyperlink{test_8cpp_a3725e199e41df7e202f7f33644abae21}{TEST}} (Sort, Tab\+Ujemne\+Dodatnie\+Duplikaty)
+\item 
+\mbox{\hyperlink{test_8cpp_a17419dadfb3a3fca4eac84eeb6c2ea6e}{TEST}} (Sort, Tab\+Dwuelementowa\+Rosnaca)
+\item 
+\mbox{\hyperlink{test_8cpp_a6d306ff738513cb364b1c297b21ff895}{TEST}} (Sort, Tab\+Sto\+Elementow)
+\item 
+\mbox{\hyperlink{test_8cpp_a8b84831b4d3f693bed58645fb4c3a8d7}{TEST}} (Sort, Tab\+Ostateczna)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Testy jednostkowe dla klasy \doxylink{class_merge_sort}{Merge\+Sort}. 
+
+Plik zawiera zestaw testów jednostkowych weryfikuj¹cych poprawnoœæ dzia³ania algorytmu sortowania przez scalanie zaimplementowanego w klasie \doxylink{class_merge_sort}{Merge\+Sort}. Testy obejmuj¹ ró¿ne przypadki u¿ycia, takie jak sortowanie liczb dodatnich, ujemnych, duplikatów, tablic specjalnych (np. jednoelementowych) oraz du¿ych zbiorów danych. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{test_8cpp_ac2b64e909897b1e60eba70526b6a3acb}\index{test.cpp@{test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/13]}}
+{\footnotesize\ttfamily \label{test_8cpp_ac2b64e909897b1e60eba70526b6a3acb} 
+TEST (\begin{DoxyParamCaption}\item[{Inicjalizuj}]{}{, }\item[{Nie\+Rzuca\+Wyjatkiem}]{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000006}{Test}}]Obs³uguje pust¹ tablicê bez rzucania wyj¹tkiem \end{DoxyRefDesc}
+\Hypertarget{test_8cpp_a17419dadfb3a3fca4eac84eeb6c2ea6e}\index{test.cpp@{test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/13]}}
+{\footnotesize\ttfamily \label{test_8cpp_a17419dadfb3a3fca4eac84eeb6c2ea6e} 
+TEST (\begin{DoxyParamCaption}\item[{Sort}]{}{, }\item[{Tab\+Dwuelementowa\+Rosnaca}]{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000011}{Test}}]Poprawnie sortuje tablicê zawieraj¹c¹ tylko dwa elementy w kolejnoœci rosn¹cej \end{DoxyRefDesc}
+\Hypertarget{test_8cpp_a39e38905ebee6b55d64d589068839f1f}\index{test.cpp@{test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [3/13]}}
+{\footnotesize\ttfamily \label{test_8cpp_a39e38905ebee6b55d64d589068839f1f} 
+TEST (\begin{DoxyParamCaption}\item[{Sort}]{}{, }\item[{Tab\+Jednoelementowa}]{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000007}{Test}}]Nie zmienia tablicy, która zawiera tylko jeden element \end{DoxyRefDesc}
+\Hypertarget{test_8cpp_a19b1a603c8e524283c2e361848eb7836}\index{test.cpp@{test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [4/13]}}
+{\footnotesize\ttfamily \label{test_8cpp_a19b1a603c8e524283c2e361848eb7836} 
+TEST (\begin{DoxyParamCaption}\item[{Sort}]{}{, }\item[{Tab\+Liczby\+Ujemne}]{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000004}{Test}}]Poprawnie sortuje tablice tylko z liczbami ujemnymi \end{DoxyRefDesc}
+\Hypertarget{test_8cpp_ac0628bf71ce706468c154a0d7b2e5e0c}\index{test.cpp@{test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [5/13]}}
+{\footnotesize\ttfamily \label{test_8cpp_ac0628bf71ce706468c154a0d7b2e5e0c} 
+TEST (\begin{DoxyParamCaption}\item[{Sort}]{}{, }\item[{Tab\+Liczby\+Ujemne\+IDodatnie}]{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000005}{Test}}]Poprawnie sortuje tablice z liczbami ujemnymi i liczbami dodatnimi \end{DoxyRefDesc}
+\Hypertarget{test_8cpp_a1d2084ba269c9929b491e94c6c7c5341}\index{test.cpp@{test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [6/13]}}
+{\footnotesize\ttfamily \label{test_8cpp_a1d2084ba269c9929b491e94c6c7c5341} 
+TEST (\begin{DoxyParamCaption}\item[{Sort}]{}{, }\item[{Tab\+Losowych\+Liczb}]{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000003}{Test}}]Poprawnie sortuje losow¹ tablicê liczb \end{DoxyRefDesc}
+\Hypertarget{test_8cpp_a02c8a31475a8c09a7b7cb25e4bcf8940}\index{test.cpp@{test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [7/13]}}
+{\footnotesize\ttfamily \label{test_8cpp_a02c8a31475a8c09a7b7cb25e4bcf8940} 
+TEST (\begin{DoxyParamCaption}\item[{Sort}]{}{, }\item[{Tab\+Niezmieniona\+Rosnaco}]{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000001}{Test}}]Zachowuje tablicê niezmienion¹, gdy ona jest ju¿ posortowana rosn¹co ~\newline
+ \end{DoxyRefDesc}
+\Hypertarget{test_8cpp_a8b84831b4d3f693bed58645fb4c3a8d7}\index{test.cpp@{test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [8/13]}}
+{\footnotesize\ttfamily \label{test_8cpp_a8b84831b4d3f693bed58645fb4c3a8d7} 
+TEST (\begin{DoxyParamCaption}\item[{Sort}]{}{, }\item[{Tab\+Ostateczna}]{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000013}{Test}}]Poprawnie sortuje du¿¹ tablicê zawieraj¹c¹ ponad 100 elementów z liczbami ujemnymi, dodatnimi oraz duplikatami \end{DoxyRefDesc}
+\Hypertarget{test_8cpp_a6d306ff738513cb364b1c297b21ff895}\index{test.cpp@{test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [9/13]}}
+{\footnotesize\ttfamily \label{test_8cpp_a6d306ff738513cb364b1c297b21ff895} 
+TEST (\begin{DoxyParamCaption}\item[{Sort}]{}{, }\item[{Tab\+Sto\+Elementow}]{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000012}{Test}}]Poprawnie sortuje du¿¹ tablicê zawieraj¹c¹ ponad 100 elementów \end{DoxyRefDesc}
+\Hypertarget{test_8cpp_a3725e199e41df7e202f7f33644abae21}\index{test.cpp@{test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [10/13]}}
+{\footnotesize\ttfamily \label{test_8cpp_a3725e199e41df7e202f7f33644abae21} 
+TEST (\begin{DoxyParamCaption}\item[{Sort}]{}{, }\item[{Tab\+Ujemne\+Dodatnie\+Duplikaty}]{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000010}{Test}}]Poprawnie sortuje tablice z liczbami ujemnymi, dodatnimi oraz duplikatami \end{DoxyRefDesc}
+\Hypertarget{test_8cpp_aef17d5ea439b89eb57e0ecc8c085c0dc}\index{test.cpp@{test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [11/13]}}
+{\footnotesize\ttfamily \label{test_8cpp_aef17d5ea439b89eb57e0ecc8c085c0dc} 
+TEST (\begin{DoxyParamCaption}\item[{Sort}]{}{, }\item[{Tab\+WOdwrotnej\+Kolejnosci}]{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000002}{Test}}]Potrafi posortowaæ tablicê, która jest posortowana w odwrotnej kolejnoœci \end{DoxyRefDesc}
+\Hypertarget{test_8cpp_a881ab84252650f02ccdb7131ad6c3dd5}\index{test.cpp@{test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [12/13]}}
+{\footnotesize\ttfamily \label{test_8cpp_a881ab84252650f02ccdb7131ad6c3dd5} 
+TEST (\begin{DoxyParamCaption}\item[{Sort}]{}{, }\item[{Tab\+ZDuplikatami}]{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000008}{Test}}]Poprawnie sortuje tablicê z duplikatami liczb \end{DoxyRefDesc}
+\Hypertarget{test_8cpp_ae9353fe6bb95fed608c789e4f202c2f0}\index{test.cpp@{test.cpp}!TEST@{TEST}}
+\index{TEST@{TEST}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST()}{TEST()}\hspace{0.1cm}{\footnotesize\ttfamily [13/13]}}
+{\footnotesize\ttfamily \label{test_8cpp_ae9353fe6bb95fed608c789e4f202c2f0} 
+TEST (\begin{DoxyParamCaption}\item[{Sort}]{}{, }\item[{Tab\+ZUjemnymi\+Duplikatami}]{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000009}{Test}}]Poprawnie sortuje tablice ujemn¹ z duplikatami \end{DoxyRefDesc}
