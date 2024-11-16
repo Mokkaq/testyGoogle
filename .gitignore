@@ -1,0 +1,64 @@
+# Pliki generowane podczas kompilacji
+*.o
+*.obj
+*.lo
+*.slo
+*.Plo
+
+# Pliki bibliotek i binariów
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+*.exe
+*.out
+
+# Foldery generowane podczas kompilacji
+/build/
+/bin/
+/lib/
+
+# Pliki debugowania i core dumps
+*.gch
+*.pch
+*.d
+*.dSYM/
+*.stackdump
+core
+
+# Pliki edytorów kodu i IDE
+*.swp
+*.swo
+*.log
+.vscode/
+.idea/
+*.user
+*.sln
+*.vcxproj
+*.vcxproj.filters
+
+# Pliki Makefile i cmake generowane automatycznie
+Makefile
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Pliki tymczasowe
+*.tmp
+*.bak
+*.old
+
+# Pliki testów
+/tests/*.log
+/tests/*.tmp
+/tests/output/
+
+# Pliki konfiguracyjne specyficzne dla użytkownika
+*.local
+*.config

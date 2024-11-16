@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\pc\Desktop\test\x64\Debug\testyGoogle.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="Sortowanie.TablicaNiezmieniona" Duration="1" />
+    <TestDuration Test="Sortowanie.TablicaNiezmienionaFail" Duration="1" />
+    <TestDuration Test="Sortowanie.SortowanieTablicyOdwrotnejKolejnosci" Duration="1" />
+    <TestDuration Test="Sortowanie.SortowanieTablicyUjemnychWartosci" Duration="1" />
+    <TestDuration Test="Sortowanie.SortowanieTablicyUjemnychIDodatnichWartosci" Duration="1" />
+    <TestDuration Test="Sortowanie.SortowanieTablicyZDuplikatami" Duration="1" />
+    <TestDuration Test="Sortowanie.SortowanieTablicyZUjemnymiDuplikatami" Duration="1" />
+    <TestDuration Test="Sortowanie.SortowanieLosowejTablicyLiczb" Duration="1" />
+    <TestDuration Test="Inicjalizacja.NieRzucaWyjatkiem" Duration="1" />
+    <TestDuration Test="Sort.TabWOdwrotnejKolejnosci" Duration="1" />
+    <TestDuration Test="Sort.TabNiezmienionaRosnaco" Duration="1" />
+    <TestDuration Test="Sort.TabLosowychLiczb" Duration="1" />
+    <TestDuration Test="Sort.TabLiczbyUjemne" Duration="1" />
+    <TestDuration Test="Sort.TabLiczbyUjemneIDodatnie" Duration="1" />
+    <TestDuration Test="Sort.TabJednoelementowa" Duration="1" />
+    <TestDuration Test="Sort.TabZDuplikatami" Duration="1" />
+    <TestDuration Test="Sort.TabZUjemnymiDuplikatami" Duration="1" />
+    <TestDuration Test="Sort.TabUjemneDodatnieDuplikaty" Duration="1" />
+    <TestDuration Test="Sort.TabDwuelementowaRosnaca" Duration="1" />
+    <TestDuration Test="Sort.TabStoElementow" Duration="1" />
+    <TestDuration Test="Sort.TabOstateczna" Duration="1" />
+    <TestDuration Test="Inicjalizuj.NieRzucaWyjatkiem" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
