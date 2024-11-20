@@ -25,7 +25,7 @@ public:
      * Tworzy pust¹ tablicê o rozmiarze 0 i alokuje pamiêæ dla wskaŸnika `arr`.
      */
     MergeSort();
-        
+               
     /**
      * @brief Konstruktor inicjalizuj¹cy z tablic¹ wejœciow¹.
      *
