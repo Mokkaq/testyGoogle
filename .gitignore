@@ -33,6 +33,7 @@ core
 *.log
 .vscode/
 .idea/
+.vs/
 *.user
 *.sln
 *.vcxproj
@@ -62,3 +63,4 @@ desktop.ini
 # Pliki konfiguracyjne specyficzne dla użytkownika
 *.local
 *.config
+.vs/
