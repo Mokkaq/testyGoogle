@@ -33,6 +33,7 @@ core
 *.log
 .vscode/
 .idea/
+.vs/
 *.user
 *.sln
 *.vcxproj
